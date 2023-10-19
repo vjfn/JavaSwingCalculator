@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class JavaCalculator {
+public class JavaCalculator extends JFrame {
     private JPanel JavaCalculator;
     private JTextField txtResultado;
     private JButton b2Button;
@@ -146,5 +146,6 @@ public class JavaCalculator {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
     }
 }
