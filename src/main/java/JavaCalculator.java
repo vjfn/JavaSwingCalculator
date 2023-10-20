@@ -181,31 +181,39 @@ public class JavaCalculator extends JFrame {
         btnRaiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                total2 = sqrt(Double.parseDouble((txtResultado.getText())));
-                txtResultado.setText(String.valueOf(total2));
+                if(txtResultado!=null && txtResultado.getText().length() != 0) {
+                    total2 = sqrt(Double.parseDouble((txtResultado.getText())));
+                    txtResultado.setText(String.valueOf(total2));
+                }
             }
         });
 
         btnPotencia.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                total2=(Double.parseDouble((txtResultado.getText())))*(Double.parseDouble((txtResultado.getText())));
-                txtResultado.setText(String.valueOf(total2));
+                if(txtResultado!=null && txtResultado.getText().length() != 0) {
+                    total2 = (Double.parseDouble((txtResultado.getText()))) * (Double.parseDouble((txtResultado.getText())));
+                    txtResultado.setText(String.valueOf(total2));
+                }
             }
         });
 
         btnInvertir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                total2= (-1)*(Double.parseDouble((txtResultado.getText())));
-                txtResultado.setText(String.valueOf(total2));
+                if(txtResultado!=null && txtResultado.getText().length() != 0) {
+                    total2 = (-1) * (Double.parseDouble((txtResultado.getText())));
+                    txtResultado.setText(String.valueOf(total2));
+                }
             }
         });
     }
     private void getOperacion(String btnText) {
-        operador = btnText.charAt(0);
-        total1 = total1 + Double.parseDouble(txtResultado.getText());
-        txtResultado.setText("");
+        if(txtResultado!=null && txtResultado.getText().length() != 0) {
+            operador = btnText.charAt(0);
+            total1 = total1 + Double.parseDouble(txtResultado.getText());
+            txtResultado.setText("");
+        }
     }
 
 
