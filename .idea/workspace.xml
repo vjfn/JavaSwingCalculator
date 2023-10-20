@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9abb1c57-f04d-4aba-908c-bae096c11894" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2023_9_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2023_9_31__Changes_.xml" afterDir="false" />
+    <list default="true" id="9abb1c57-f04d-4aba-908c-bae096c11894" name="Changes" comment="Errores eliminados, Funciona">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaCalculator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaCalculator.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JavaCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="JavaCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCalculator" />
+      <module name="JavaSwingCalculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaCalculator" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +79,15 @@
       <workItem from="1697705378399" duration="2335000" />
       <workItem from="1697734500265" duration="3395000" />
     </task>
+    <task id="LOCAL-00001" summary="Errores eliminados, Funciona">
+      <option name="closed" value="true" />
+      <created>1697823551580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697823551580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,5 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Errores eliminados, Funciona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Errores eliminados, Funciona" />
   </component>
 </project>

@@ -6,7 +6,7 @@ import static java.lang.Math.sqrt;
 
 public class JavaCalculator extends JFrame {
     private JPanel JavaCalculator;
-    private JTextField txtResultado;
+    private JLabel txtResultado;
     private JButton btnPotencia;
     private JButton btnClear;
     private JButton btnSiete;
