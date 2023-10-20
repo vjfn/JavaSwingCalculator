@@ -2,10 +2,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static java.lang.Math.sqrt;
+
 public class JavaCalculator extends JFrame {
     private JPanel JavaCalculator;
     private JTextField txtResultado;
-    private JButton b2Button;
+    private JButton btnPotencia;
     private JButton btnClear;
     private JButton btnSiete;
     private JButton btnCuatro;
@@ -14,7 +16,7 @@ public class JavaCalculator extends JFrame {
     private JButton btnNueve;
     private JButton btnSeis;
     private JButton btnTres;
-    private JButton b1Button;
+    private JButton btnRaiz;
     private JButton btnOcho;
     private JButton btnMultiplicar;
     private JButton btnCinco;
@@ -28,6 +30,7 @@ public class JavaCalculator extends JFrame {
 
     private Double total1 = 0.0;
     private Double total2 = 0.0;
+    private char operador;
 
     public JavaCalculator() {
 
@@ -116,19 +119,25 @@ public class JavaCalculator extends JFrame {
 
             }
         });
-        btnSumar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                total1 = total1 + Double.parseDouble(txtResultado.getText());
-                txtResultado.setText("");
-            }
-        });
         btnIgual.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                total2 = total1 + Double.parseDouble(txtResultado.getText());
+                switch (operador) {
+                    case'+':
+                        total2 = total1 + Double.parseDouble(txtResultado.getText());
+                        break;
+                    case'-':
+                        total2 = total1 - Double.parseDouble(txtResultado.getText());
+                        break;
+                    case'/':
+                        total2 = total1 / Double.parseDouble(txtResultado.getText());
+                        break;
+                    case'*':
+                        total2 = total1 * Double.parseDouble(txtResultado.getText());
+                        break;
+                }
                 txtResultado.setText(Double.toString(total2));
-                total1 = 0.0;
+                total1=0.0;
             }
         });
         btnClear.addActionListener(new ActionListener() {
@@ -138,7 +147,67 @@ public class JavaCalculator extends JFrame {
                 txtResultado.setText("");
             }
         });
+
+
+        btnSumar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String btnText = btnSumar.getText();
+                getOperacion(btnText);
+            }
+        });
+        btnRestar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String btnText = btnRestar.getText();
+                getOperacion(btnText);
+            }
+        });
+        btnMultiplicar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String btnText = btnMultiplicar.getText();
+                getOperacion(btnText);
+            }
+        });
+        btnDividir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String btnText = btnDividir.getText();
+                getOperacion(btnText);
+            }
+        });
+
+        btnRaiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                total2 = sqrt(Double.parseDouble((txtResultado.getText())));
+                txtResultado.setText(String.valueOf(total2));
+            }
+        });
+
+        btnPotencia.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                total2=(Double.parseDouble((txtResultado.getText())))*(Double.parseDouble((txtResultado.getText())));
+                txtResultado.setText(String.valueOf(total2));
+            }
+        });
+
+        btnInvertir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                total2= (-1)*(Double.parseDouble((txtResultado.getText())));
+                txtResultado.setText(String.valueOf(total2));
+            }
+        });
     }
+    private void getOperacion(String btnText) {
+        operador = btnText.charAt(0);
+        total1 = total1 + Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+    }
+
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("JavaCalculator");
