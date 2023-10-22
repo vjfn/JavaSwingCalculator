@@ -3,8 +3,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static java.lang.Math.sqrt;
-
+/**
+ * JavaCalculator es una aplicación que permite realizar operaciones
+ * aritméticas básicas, así como funciones adicionales como la raíz cuadrada,
+ * potenciación e inversión de números.
+ */
 public class JavaCalculator extends JFrame {
+    // Componentes de la calculadora
     private JPanel JavaCalculator;
     private JLabel txtResultado;
     private JButton btnPotencia;
@@ -27,13 +32,13 @@ public class JavaCalculator extends JFrame {
     private JButton btnCero;
     private JButton btnPunto;
     private JButton btnIgual;
-
+    // Variables para realizar cálculos
     private Double total1 = 0.0;
     private Double total2 = 0.0;
     private char operador;
 
     public JavaCalculator() {
-
+        // Configuración de los botones
         btnUno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -119,6 +124,10 @@ public class JavaCalculator extends JFrame {
 
             }
         });
+        /**
+         * Método para realizar operaciones matemáticas (suma, resta, multiplicación, división, raiz, potencia e
+         * inversión) así como el boton igual y limpiar calculadora
+         */
         btnIgual.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -218,7 +227,7 @@ public class JavaCalculator extends JFrame {
 
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("JavaCalculator");
+        JFrame frame = new JFrame("Calculadora");
         frame.setContentPane(new JavaCalculator().JavaCalculator);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

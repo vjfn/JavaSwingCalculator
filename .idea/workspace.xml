@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9abb1c57-f04d-4aba-908c-bae096c11894" name="Changes" comment="Errores eliminados, Funciona">
+    <list default="true" id="9abb1c57-f04d-4aba-908c-bae096c11894" name="Changes" comment="Funcional, colores.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaCalculator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaCalculator.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JavaCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +77,8 @@
       <updated>1697705377336</updated>
       <workItem from="1697705378399" duration="2335000" />
       <workItem from="1697734500265" duration="3395000" />
+      <workItem from="1697831938683" duration="555000" />
+      <workItem from="1697991471523" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="Errores eliminados, Funciona">
       <option name="closed" value="true" />
@@ -87,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697823551580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Funcional, colores.">
+      <option name="closed" value="true" />
+      <created>1697825015462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697825015462</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Errores eliminados, Funciona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errores eliminados, Funciona" />
+    <MESSAGE value="Funcional, colores." />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcional, colores." />
   </component>
 </project>
